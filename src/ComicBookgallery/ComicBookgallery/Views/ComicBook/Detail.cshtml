@@ -1,7 +1,26 @@
 ﻿
 @{
     ViewBag.Title = "Detail";
+    var seriesTitle = "The Amazing spider man";
+    var issuenumber = 700;
+    var description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>";
+    var artists = new string[]
+    {
+        "Script: Dan Slott",
+        "Pencils: Humberto Ramos",
+        "Inks: Victor Olazaba",
+        "Colors: Edgar Delgado",
+        "Letters: Chris Eliopoulos"
+    };
 }
 
 <h2>@ViewBag.Title</h2>
+<h1>@seriesTitle</h1>
+<h2>isuue #@issuenumber</h2>
+
+<h5>Description:</h5>
+<div>@Html.Raw(description)</div>
+
+<h5>Artists:</h5>
+<div>@artists</div>
 
